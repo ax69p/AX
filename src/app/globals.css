@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
+@theme {
+  /* Neon Cyan / Electric Blue Palette extracted from user request */
+  --color-cyan-50: #e0f2fe;
+  --color-cyan-100: #1abefa;
+  --color-cyan-200: #10a7f7;
+  --color-cyan-300: #0d8df4;
+  --color-cyan-400: #0875ee;
+  --color-cyan-500: #0365ef;
+  --color-cyan-600: #2368a0;
+  --color-cyan-700: #1a4f7c;
+  --color-cyan-800: #061d38;
+  --color-cyan-900: #070b12;
+
+  --color-background: var(--color-cyan-900);
+  --color-foreground: #f8fafc;
+  --font-heading: var(--font-syne);
+  --font-body: var(--font-dm-sans);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #070b12; /* Deep black/dark-blue background */
+  --foreground: #f8fafc; /* Light text for readability */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 15px rgba(3, 101, 239, 0.4), 0 0 30px rgba(3, 101, 239, 0.2);
+  }
+  
+  .glow-border {
+    border: 1px solid rgba(26, 190, 250, 0.5);
+    box-shadow: inset 0 0 10px rgba(26, 190, 250, 0.1), 0 0 10px rgba(26, 190, 250, 0.2);
+  }
+  
+  .glassmorphism {
+    background: rgba(6, 29, 56, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .glassmorphism-glow {
+    background: rgba(6, 29, 56, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(26, 190, 250, 0.3);
+    box-shadow: 0 0 20px rgba(13, 141, 244, 0.1);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(26, 190, 250, 0.6);
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+  
+  @keyframes bounce-short {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-bounce-short {
+    animation: bounce-short 2s ease-in-out infinite;
+  }
 }
