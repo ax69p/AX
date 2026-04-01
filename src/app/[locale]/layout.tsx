@@ -7,7 +7,6 @@ import { notFound } from 'next/navigation';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Communications from "@/components/ui/Communications";
-import LeadMagnet from "@/components/ui/LeadMagnet";
 import "../globals.css";
 
 const syne = Syne({
@@ -95,7 +94,6 @@ export default async function RootLayout({
           <Navbar />
           {children}
           <Communications />
-          <LeadMagnet />
           <Footer />
         </NextIntlClientProvider>
       </body>
