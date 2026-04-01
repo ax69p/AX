@@ -29,7 +29,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="flex flex-col gap-4">
             <a 
-              href="https://instagram.com/AXENTRIXSY" 
+              href="https://instagram.com/axentrix.sy" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-cyan-100/60 hover:text-cyan-400 transition-all text-sm group"

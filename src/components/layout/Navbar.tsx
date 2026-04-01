@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
 import { useParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Menu, X, Globe } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 
@@ -12,6 +13,7 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
+  const searchParams = useSearchParams();
   const locale = params.locale as string;
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +29,9 @@ export default function Navbar() {
 
   const toggleLanguage = () => {
     const nextLocale = locale === 'en' ? 'ar' : 'en';
-    router.replace({ pathname }, { locale: nextLocale });
+    const query = new URLSearchParams(searchParams.toString()).toString();
+    const newPath = query ? `${pathname}?${query}` : pathname;
+    router.replace(newPath as any, { locale: nextLocale });
   };
 
   return (

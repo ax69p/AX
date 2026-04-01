@@ -31,6 +31,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     description: t('description'),
     metadataBase: new URL(baseUrl),
+    verification: {
+      google: "4EZNf-FhM6KbEm9jWKsDBplhCluedwWBgcBvTxcxNq0",
+    },
     alternates: {
       canonical: '/',
       languages: {
