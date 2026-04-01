@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({locale, namespace: 'Metadata'});
   
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://axentrix.agency';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://axentrix.app';
  
   return {
     title: {
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       default: t('title'),
     },
     description: t('description'),
+    keywords: t('keywords'),
     metadataBase: new URL(baseUrl),
     verification: {
       google: "4EZNf-FhM6KbEm9jWKsDBplhCluedwWBgcBvTxcxNq0",
