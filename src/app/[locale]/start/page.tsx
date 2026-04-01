@@ -92,6 +92,7 @@ export default function StartPage() {
               <option value="x">{t('pkg_x')}</option>
               <option value="xplus">{t('pkg_xplus')}</option>
               <option value="xpro">{t('pkg_xpro')}</option>
+              <option value="qrmenu">{t('pkg_qrmenu')}</option>
               <option value="custom">{t('pkg_custom')}</option>
             </select>
           </div>

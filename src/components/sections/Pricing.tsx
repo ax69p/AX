@@ -72,46 +72,46 @@ export default function Pricing() {
           <p className="text-cyan-100/70 text-lg max-w-2xl mx-auto">{t('sub_heading')}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 items-end max-w-7xl mx-auto">
           {packages.map((pkg) => (
             <div 
               key={pkg.id} 
-              className={`rounded-2xl relative p-8 flex flex-col h-full ${
+              className={`rounded-2xl relative p-6 flex flex-col h-full ${
                 pkg.isPopular 
-                ? 'glassmorphism-glow glow-border scale-100 md:scale-105 z-10' 
+                ? 'glassmorphism-glow glow-border scale-100 lg:scale-105 z-10' 
                 : 'glassmorphism border border-cyan-900/50'
               }`}
             >
               {pkg.isPopular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-500 text-white text-xs font-bold uppercase tracking-wider py-1 px-4 rounded-full glow-primary">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-500 text-white text-[10px] font-bold uppercase tracking-wider py-1 px-3 rounded-full glow-primary">
                   {t('badge_best_value')}
                 </div>
               )}
               
-              <h3 className={`text-xl font-bold font-syne ${pkg.isPopular ? 'text-cyan-300 text-glow' : 'text-cyan-50'} mb-2`}>
+              <h3 className={`text-lg font-bold font-syne ${pkg.isPopular ? 'text-cyan-300 text-glow' : 'text-cyan-50'} mb-2`}>
                 {pkg.name}
               </h3>
               
-              <div className="flex items-baseline gap-1 mt-4 mb-6">
-                <span className="text-4xl font-black text-white">{pkg.price}</span>
+              <div className="flex items-baseline gap-1 mt-2 mb-4">
+                <span className="text-3xl font-black text-white">{pkg.price}</span>
               </div>
               
-              <div className="bg-cyan-950/40 rounded-lg p-3 text-sm text-cyan-200/80 mb-6 border border-cyan-800/30">
+              <div className="bg-cyan-950/40 rounded-lg p-2 text-[12px] text-cyan-200/80 mb-4 border border-cyan-800/30">
                 🧭 {t('delivery_prefix')}: <span className="font-semibold text-cyan-100">{pkg.delivery}</span>
               </div>
 
-              <ul className="flex-1 flex flex-col gap-4 mb-8">
+              <ul className="flex-1 flex flex-col gap-3 mb-6">
                 {pkg.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <Check className="text-cyan-400 mt-1 flex-shrink-0" size={18} />
-                    <span className="text-cyan-50/80 text-sm">{feature}</span>
+                  <li key={i} className="flex items-start gap-2">
+                    <Check className="text-cyan-400 mt-1 flex-shrink-0" size={14} />
+                    <span className="text-cyan-50/80 text-[13px] leading-tight">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <Link 
                 href={`/start?package=${pkg.id}`}
-                className={`w-full py-4 rounded-lg font-bold text-center transition-all ${
+                className={`w-full py-3 rounded-lg font-bold text-center text-sm transition-all ${
                   pkg.isPopular 
                   ? 'bg-cyan-500 hover:bg-cyan-400 text-white glow-primary' 
                   : 'bg-transparent border border-cyan-600 hover:bg-cyan-900/50 text-cyan-100'
@@ -121,6 +121,56 @@ export default function Pricing() {
               </Link>
             </div>
           ))}
+
+          {/* New QR Menu Standalone Card */}
+          <div className="rounded-2xl relative p-6 flex flex-col h-full glassmorphism border border-purple-500/30 bg-purple-500/5">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-[10px] font-bold uppercase tracking-wider py-1 px-3 rounded-full shadow-lg shadow-purple-500/20">
+              NEW SERVICE
+            </div>
+            
+            <h3 className="text-lg font-bold font-syne text-purple-300 mb-2">
+              {t('packages.qrmenu.name')}
+            </h3>
+            
+            <div className="flex items-baseline gap-1 mt-2 mb-4">
+              <span className="text-3xl font-black text-white">{t('packages.qrmenu.price')}</span>
+            </div>
+            
+            <div className="bg-purple-950/20 rounded-lg p-2 text-[12px] text-purple-200/80 mb-4 border border-purple-800/20">
+              🧭 {t('delivery_prefix')}: <span className="font-semibold text-purple-100">{t('packages.qrmenu.delivery')}</span>
+            </div>
+
+            <ul className="flex-1 flex flex-col gap-3 mb-6">
+              {(t.raw('packages.qrmenu.features') as string[]).map((feature, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Check className="text-purple-400 mt-1 flex-shrink-0" size={14} />
+                  <span className="text-cyan-50/80 text-[13px] leading-tight">{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Link 
+              href="/start?package=qrmenu"
+              className="w-full py-3 rounded-lg font-bold text-center text-sm transition-all border border-purple-500/50 hover:bg-purple-500/20 text-purple-100"
+            >
+              {t('btn_get_package')}
+            </Link>
+          </div>
+        </div>
+
+        {/* Add-on Banner */}
+        <div className="mt-12 max-w-4xl mx-auto glassmorphism border border-cyan-500/20 p-6 rounded-2xl flex flex-col md:flex-row items-center gap-6 relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+          <div className="w-16 h-16 rounded-full bg-cyan-500/10 flex items-center justify-center flex-shrink-0 border border-cyan-500/30 group-hover:scale-110 transition-transform">
+            <span className="text-2xl">🍽️</span>
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <h4 className="text-lg font-bold text-white mb-1 font-syne">{t('qr_addon.title')}</h4>
+            <p className="text-cyan-100/60 text-sm">{t('qr_addon.desc')}</p>
+          </div>
+          <Link href="/start" className="px-6 py-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-full text-sm font-bold transition-all">
+            {t('custom_prompt')}
+          </Link>
         </div>
 
         <div className="mt-16 bg-cyan-950/20 border border-cyan-900/50 rounded-xl max-w-3xl mx-auto p-6 flex items-center justify-center gap-4 flex-col sm:flex-row text-center sm:text-left">

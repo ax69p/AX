@@ -111,7 +111,17 @@
         "name": "Package X Pro",
         "delivery": "2–3 Weeks",
         "features": ["Full Custom Site", "Booking System", "Speed Optimization", "SEO Ready", "CMS Integration"]
+      },
+      "qrmenu": {
+        "name": "QR Menu Standalone",
+        "price": "$199",
+        "delivery": "2–3 Business Days",
+        "features": ["Unlimited Items", "Dynamic Updates", "Mobile-First Design", "Direct WhatsApp Orders"]
       }
+    },
+    "qr_addon": {
+      "title": "Restaurant Special: QR Menu Add-on",
+      "desc": "Add a professional QR Menu to any website package for only +$150."
     }
   },
   "FAQ": {
@@ -164,6 +174,7 @@
     "pkg_x": "Package X ($199)",
     "pkg_xplus": "Package X+ ($399) - Best Value",
     "pkg_xpro": "Package X Pro ($599)",
+    "pkg_qrmenu": "QR Menu Standalone ($199)",
     "pkg_custom": "Custom Enterprise Solution",
     "message": "Project Details / Message",
     "message_placeholder": "Tell us a little bit about your goals...",
