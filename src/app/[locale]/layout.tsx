@@ -6,7 +6,6 @@ import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Communications from "@/components/ui/Communications";
 import "../globals.css";
 
 const syne = Syne({
@@ -93,7 +92,6 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           {children}
-          <Communications />
           <Footer />
         </NextIntlClientProvider>
       </body>
