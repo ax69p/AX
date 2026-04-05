@@ -1,50 +1,50 @@
 {
   "Metadata": {
     "title": "AxentriX | Premium Web Design & Conversion Optimization Agency",
-    "description": "AxentriX builds high-converting, lightning-fast websites using Next.js. We turn your digital presence into a client-generating machine. Premium designs tailored for growth.",
-    "keywords": "web design agency, next.js development, conversion rate optimization, premium websites, digital growth partner"
+    "description": "AxentriX builds high-converting, lightning-fast websites using Nextjs We turn your digital presence into a client-generating machine Premium designs tailored for growth",
+    "keywords": "web design agency, nextjs development, conversion rate optimization, premium websites, digital growth partner"
   },
   "Hero": {
-    "badge": "Premium Web Agency — Results Guaranteed",
-    "headline": "We build websites that generate clients — not just look good.",
-    "sub_headline": "High-converting websites for businesses that want real growth.",
-    "btn_primary": "Get Started",
-    "btn_secondary": "View Packages",
-    "social_proof": "⭐⭐⭐⭐⭐ Trusted by 20+ businesses across 5 industries",
-    "timer_text": "Special launch pricing ends in:"
+    "badge": "Premium Web Agency  Results Guaranteed",
+    "headline": "We build websites that generate clients  not just look good",
+    "subheadline": "High-converting websites for businesses that want real growth",
+    "btnprimary": "Get Started",
+    "btnsecondary": "View Packages",
+    "socialproof": "⭐⭐⭐⭐⭐ Trusted by 20+ businesses across 5 industries",
+    "timertext": "Special launch pricing ends in:"
   },
   "SocialProof": {
-    "stat_websites": "Websites Built",
-    "stat_clients": "Happy Clients",
-    "stat_satisfaction": "Satisfaction Rate",
-    "trusted_by": "Trusted By Industry Leaders",
+    "statwebsites": "Websites Built",
+    "statclients": "Happy Clients",
+    "statsatisfaction": "Satisfaction Rate",
+    "trustedby": "Trusted By Industry Leaders",
     "reviews": [
-      "AxentriX delivered beyond expectations. Our leads doubled in 3 weeks. - Sarah J.",
-      "Best web agency we've worked with. Period. - Mike T.",
-      "Fast, reliable, and the design is out of this world. - Ahmed K.",
-      "Our conversion rate skyrocketed after the redesign. - Elite Team"
+      "AxentriX delivered beyond expectations Our leads doubled in 3 weeks - Sarah J",
+      "Best web agency we've worked with Period - Mike T",
+      "Fast, reliable, and the design is out of this world - Ahmed K",
+      "Our conversion rate skyrocketed after the redesign - Elite Team"
     ]
   },
   "ROICalculator": {
     "heading": "Stop Leaving Money on the Table",
-    "sub_heading": "See how much revenue you could unlock with a high-converting website designed by AxentriX.",
-    "current_metrics": "Your Current Metrics",
-    "visitors_label": "Monthly Website Visitors",
-    "conversion_label": "Current Conversion Rate",
-    "lead_value_label": "Average Lead/Sale Value ($)",
-    "potential_growth": "Potential Growth with AxentriX",
-    "current_revenue": "Current Revenue",
-    "new_revenue": "New Revenue",
+    "subheading": "See how much revenue you could unlock with a high-converting website designed by AxentriX",
+    "currentmetrics": "Your Current Metrics",
+    "visitorslabel": "Monthly Website Visitors",
+    "conversionlabel": "Current Conversion Rate",
+    "leadvaluelabel": "Average Lead/Sale Value ($)",
+    "potentialgrowth": "Potential Growth with AxentriX",
+    "currentrevenue": "Current Revenue",
+    "newrevenue": "New Revenue",
     "estimated": "ESTIMATED",
     "mo": "/mo",
-    "extra_profit": "Extra Monthly Profit",
-    "per_month": "/month",
-    "per_year": "That's {yearly} extra per year."
+    "extraprofit": "Extra Monthly Profit",
+    "permonth": "/month",
+    "peryear": "That's {yearly} extra per year"
   },
   "Portfolio": {
     "heading": "Work That Speaks",
-    "sub_heading": "We design digital experiences that elevate brands and drive revenue. Check out our recent transformations.",
-    "view_all": "View All Projects",
+    "subheading": "We design digital experiences that elevate brands and drive revenue Check out our recent transformations",
+    "viewall": "View All Projects",
     "categories": {
       "store": "Online Store",
       "landing": "Landing Page",
@@ -54,49 +54,49 @@
   },
   "Features": {
     "heading": "Why Brands Choose AxentriX",
-    "sub_heading": "We are more than just a web design agency. We are your technical growth partner, engineering digital storefronts that dominate.",
+    "subheading": "We are more than just a web design agency We are your technical growth partner, engineering digital storefronts that dominate",
     "items": [
       {
         "title": "Conversion-Focused",
-        "desc": "We don't just design for looks. Every element is structured to turn visitors into paying customers."
+        "desc": "We don't just design for looks Every element is structured to turn visitors into paying customers"
       },
       {
         "title": "Blazing Fast Load Times",
-        "desc": "Speed kills conversions. We build on Next.js to ensure lightning-fast pages that keep users engaged."
+        "desc": "Speed kills conversions We build on Nextjs to ensure lightning-fast pages that keep users engaged"
       },
       {
         "title": "Scalable Infrastructure",
-        "desc": "Your website grows with your business. No need for complete rewrites when you add new services or products."
+        "desc": "Your website grows with your business No need for complete rewrites when you add new services or products"
       },
       {
         "title": "SEO Optimized Base",
-        "desc": "We follow core web vitals and semantic HTML structure so Google loves your site out of the box."
+        "desc": "We follow core web vitals and semantic HTML structure so Google loves your site out of the box"
       },
       {
         "title": "Premium Design System",
-        "desc": "We use high-end aesthetics, custom animations, and micro-interactions that build instant trust."
+        "desc": "We use high-end aesthetics, custom animations, and micro-interactions that build instant trust"
       },
       {
         "title": "Strategic Copywriting",
-        "desc": "Words sell. We structure content to highlight your unique value proposition clearly and persuasively."
+        "desc": "Words sell We structure content to highlight your unique value proposition clearly and persuasively"
       }
     ]
   },
   "Pricing": {
     "heading": "Results-Driven Packages",
-    "sub_heading": "Choose the right fit for your business growth.",
+    "subheading": "Choose the right fit for your business growth",
     "sticky": {
       "compare": "Compare Packages:"
     },
-    "badge_best_value": "Best Value",
-    "delivery_prefix": "Delivery",
-    "btn_get_package": "Get This Package",
+    "badgebestvalue": "Best Value",
+    "deliveryprefix": "Delivery",
+    "btngetpackage": "Get This Package",
     "guarantee": {
       "title": "100% Money-Back Guarantee",
-      "desc": "If your website doesn't bring results — you get your money back. No questions asked."
+      "desc": "If your website doesn't bring results  you get your money back No questions asked"
     },
-    "custom_prompt": "Need something custom?",
-    "custom_link": "Contact us for a tailored solution.",
+    "customprompt": "Need something custom?",
+    "customlink": "Contact us for a tailored solution",
     "packages": {
       "x": {
         "name": "Package X",
@@ -104,7 +104,7 @@
         "features": ["1-Page Landing", "Mobile Responsive", "Basic Design", "Contact Form"]
       },
       "xplus": {
-        "name": "Package X+",
+        "name": "Package X Plus",
         "delivery": "7–10 Business Days",
         "features": ["4–6 Pages", "Modern UI/UX", "Contact Form", "Basic SEO", "Fast Loading"]
       },
@@ -120,95 +120,95 @@
         "features": ["Unlimited Items", "Dynamic Updates", "Mobile-First Design", "Direct WhatsApp Orders"]
       }
     },
-    "qr_addon": {
+    "qraddon": {
       "title": "Restaurant Special: QR Menu Add-on",
-      "desc": "Add a professional QR Menu to any website package for only +$150."
+      "desc": "Add a professional QR Menu to any website package for only +$150"
     }
   },
   "FAQ": {
     "heading": "Frequently Asked Questions",
-    "sub_heading": "Everything you need to know before we start working together.",
+    "subheading": "Everything you need to know before we start working together",
     "items": [
       {
         "q": "How long does it take to build a website?",
-        "a": "Our standard Package X+ takes about 5-7 business days. Custom enterprise solutions may take 2-4 weeks. We pride ourselves on rapid deployment without sacrificing premium quality."
+        "a": "Our standard Package X Plus takes about 5-7 business days Custom enterprise solutions may take 2-4 weeks We pride ourselves on rapid deployment without sacrificing premium quality"
       },
       {
         "q": "Will I be able to update the website myself?",
-        "a": "Yes! If your package includes a CMS (like Sanity or WordPress headless), we will provide you with a simple dashboard and tutorial so you can swap text, add blogs, and update images easily."
+        "a": "Yes! If your package includes a CMS (like Sanity or WordPress headless), we will provide you with a simple dashboard and tutorial so you can swap text, add blogs, and update images easily"
       },
       {
         "q": "What do I need to prepare before we start?",
-        "a": "All we need is your branding (logo, colors), existing social media links, and a brief idea of the services you offer. We will handle the copywriting, structure, and design for you."
+        "a": "All we need is your branding (logo, colors), existing social media links, and a brief idea of the services you offer We will handle the copywriting, structure, and design for you"
       },
       {
         "q": "Do you offer SEO services?",
-        "a": "Every website we build is fundamentally SEO optimized out of the box (fast loading, semantic HTML, mobile-friendly). For ongoing content strategies and backlinking, we offer dedicated monthly SEO retainer plans."
+        "a": "Every website we build is fundamentally SEO optimized out of the box (fast loading, semantic HTML, mobile-friendly) For ongoing content strategies and backlinking, we offer dedicated monthly SEO retainer plans"
       },
       {
         "q": "What is your refund policy?",
-        "a": "We offer a 100% money-back guarantee. If you do not see an improvement in lead generation and conversion metrics after launching our optimized platform within 30 days, we refund your money. Period."
+        "a": "We offer a 100% money-back guarantee If you do not see an improvement in lead generation and conversion metrics after launching our optimized platform within 30 days, we refund your money Period"
       }
     ]
   },
   "FinalCTA": {
     "badge": "Start Scaling Today",
     "heading": "Ready for a Website that <br className=\"hidden md:block\"/> Actually Brings in Money?",
-    "sub_heading": "We handle the design, code, and strategy. You handle the new clients calling your number.",
-    "btn_claim": "Claim Your Discount",
-    "btn_whatsapp": "Chat on WhatsApp",
-    "no_credit_card": "No credit card required for consultation."
+    "subheading": "We handle the design, code, and strategy You handle the new clients calling your number",
+    "btnclaim": "Claim Your Discount",
+    "btnwhatsapp": "Chat on WhatsApp",
+    "nocreditcard": "No credit card required for consultation"
   },
   "StartPage": {
     "back": "Back to Homepage",
     "heading": "Start Your Project",
-    "sub_heading": "Fill out the form below. No payment required right now — just a conversation about your growth.",
+    "subheading": "Fill out the form below No payment required right now  just a conversation about your growth",
     "name": "Full Name *",
-    "name_placeholder": "John Doe",
+    "nameplaceholder": "John Doe",
     "email": "Email Address *",
-    "email_placeholder": "john@company.com",
+    "emailplaceholder": "john@companycom",
     "whatsapp": "WhatsApp Number *",
-    "whatsapp_placeholder": "+1 (555) 000-0000",
+    "whatsappplaceholder": "+1 (555) 000-0000",
     "website": "Current Website (Optional)",
-    "website_placeholder": "https://yourwebsite.com",
+    "websiteplaceholder": "https://yourwebsitecom",
     "package": "Interested Package",
-    "pkg_x": "Package X ($199)",
-    "pkg_xplus": "Package X+ ($399) - Best Value",
-    "pkg_xpro": "Package X Pro ($599)",
-    "pkg_qrmenu": "QR Menu Standalone ($199)",
-    "pkg_custom": "Custom Enterprise Solution",
+    "pkgx": "Package X ($199)",
+    "pkgxplus": "Package X Plus ($399) - Best Value",
+    "pkgxpro": "Package X Pro ($599)",
+    "pkgqrmenu": "QR Menu Standalone ($199)",
+    "pkgcustom": "Custom Enterprise Solution",
     "message": "Project Details / Message",
-    "message_placeholder": "Tell us a little bit about your goals...",
+    "messageplaceholder": "Tell us a little bit about your goals",
     "submit": "Submit Request",
-    "secure": "Your information is secure. We hate spam as much as you do.",
-    "success_heading": "Request Received!",
-    "success_sub": "We've got your details. One of our growth specialists will reach out to you within 24 hours.",
-    "return_home": "Return Home",
-    "faster_whatsapp": "Want faster response? WhatsApp Us"
+    "secure": "Your information is secure We hate spam as much as you do",
+    "successheading": "Request Received!",
+    "successsub": "We've got your details One of our growth specialists will reach out to you within 24 hours",
+    "returnhome": "Return Home",
+    "fasterwhatsapp": "Want faster response? WhatsApp Us"
   },
   "LeadMagnet": {
     "badge": "Free Resource",
-    "heading": "Wait! Don't leave empty-handed.",
-    "sub_heading": "Get our exclusive <strong>\"10-Point Conversion Checklist\"</strong> used to double sales. Plus, a free mini-audit of your current website.",
-    "name_placeholder": "Your First Name",
-    "email_placeholder": "Your Best Email",
-    "website_placeholder": "Website URL (For Free Mini-Audit)",
-    "btn_submit": "Send Me The Guide",
-    "btn_close": "No thanks, I'm already getting enough clients.",
-    "success_heading": "All Set!",
-    "success_sub": "Check your inbox/WhatsApp shortly for your free 10-Point Conversion Checklist.",
+    "heading": "Wait! Don't leave empty-handed",
+    "subheading": "Get our exclusive <strong>\"10-Point Conversion Checklist\"</strong> used to double sales Plus, a free mini-audit of your current website",
+    "nameplaceholder": "Your First Name",
+    "emailplaceholder": "Your Best Email",
+    "websiteplaceholder": "Website URL (For Free Mini-Audit)",
+    "btnsubmit": "Send Me The Guide",
+    "btnclose": "No thanks, I'm already getting enough clients",
+    "successheading": "All Set!",
+    "successsub": "Check your inbox/WhatsApp shortly for your free 10-Point Conversion Checklist",
     "close": "Close Window"
   },
   "Navigation": {
     "services": "Services",
     "portfolio": "Portfolio",
     "pricing": "Pricing",
-    "get_started": "Get Started",
-    "lang_toggle": "العربية"
+    "getstarted": "Get Started",
+    "langtoggle": "العربية"
   },
   "Footer": {
-    "description": "We build websites that generate clients — not just look good. High-converting digital experiences tailored for ambitious businesses.",
-    "quick_links": "Quick Links",
+    "description": "We build websites that generate clients  not just look good High-converting digital experiences tailored for ambitious businesses",
+    "quicklinks": "Quick Links",
     "services": "Services",
     "pricing": "Pricing",
     "portfolio": "Portfolio",
@@ -217,22 +217,22 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "refund": "Refund Policy",
-    "newsletter_heading": "Ready to grow?",
-    "newsletter_desc": "Subscribe to our newsletter for conversion tips.",
-    "email_placeholder": "Your email...",
-    "newsletter_success": "Success! Welcome aboard.",
-    "rights": "AxentriX Agency. All rights reserved.",
+    "newsletterheading": "Ready to grow?",
+    "newsletterdesc": "Subscribe to our newsletter for conversion tips",
+    "emailplaceholder": "Your email",
+    "newslettersuccess": "Success! Welcome aboard",
+    "rights": "AxentriX Agency All rights reserved",
     "instagram": "Instagram",
-    "whatsapp_label": "WhatsApp",
-    "email_label": "Email",
-    "handle": "@axentrix.sy",
+    "whatsapplabel": "WhatsApp",
+    "emaillabel": "Email",
+    "handle": "@axentrixsy",
     "phone": "+961 81 945 750",
-    "email": "Axentrixsy@gmail.com",
-    "personal_handle": "By ax04s"
+    "email": "Axentrixsy@gmailcom",
+    "personalhandle": "By ax04s"
   },
   "Communications": {
-    "popup_msg": "👋 Hey! Need a website?",
-    "popup_sub": "We can deliver in 3 days. Chat with us →",
-    "btn_chat": "Start Chat"
+    "popupmsg": "👋 Hey! Need a website?",
+    "popupsub": "We can deliver in 3 days Chat with us →",
+    "btnchat": "Start Chat"
   }
 }

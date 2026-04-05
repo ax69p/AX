@@ -51,12 +51,12 @@ export default function Hero3D() {
     };
     window.addEventListener('mousemove', handleMouseMove);
 
-    // Soft gradient orbs
+    // Neon gradient orbs for dark premium mode
     const orbs = [
-      { x: 0.2, y: 0.3, r: 0.4, color: 'rgba(199, 210, 254, 0.4)' }, // Indigo 200
-      { x: 0.8, y: 0.2, r: 0.35, color: 'rgba(221, 214, 254, 0.4)' }, // Violet 200
-      { x: 0.5, y: 0.8, r: 0.45, color: 'rgba(191, 219, 254, 0.4)' }, // Blue 200
-      { x: 0.1, y: 0.9, r: 0.3, color: 'rgba(233, 213, 255, 0.4)' }, // Fuchsia 200
+      { x: 0.2, y: 0.3, r: 0.4, color: 'rgba(3, 101, 239, 0.15)' }, // Cyan 500 equivalent
+      { x: 0.8, y: 0.2, r: 0.35, color: 'rgba(26, 190, 250, 0.15)' }, // Cyan 100 equivalent
+      { x: 0.5, y: 0.8, r: 0.45, color: 'rgba(13, 141, 244, 0.12)' }, // Cyan 300 equivalent
+      { x: 0.1, y: 0.9, r: 0.3, color: 'rgba(35, 104, 160, 0.2)' }, // Cyan 600 equivalent
     ];
 
     let time = 0;
@@ -70,8 +70,9 @@ export default function Hero3D() {
 
       ctx.clearRect(0, 0, cw, ch);
       
-      // Draw grid
-      ctx.strokeStyle = 'rgba(148, 163, 184, 0.15)'; // slate-400 with 15% opacity
+      // Draw grid (subtle cyan/slate)
+      ctx.strokeStyle = 'rgba(26, 190, 250, 0.05)';
+
       ctx.lineWidth = 0.5;
       const gridSize = 40;
       
@@ -128,9 +129,7 @@ export default function Hero3D() {
   return (
     <section 
       ref={containerRef}
-      className={`relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24 pb-20 ${
-        isMobile ? 'bg-[linear-gradient(135deg,#f8f7ff_0%,#ede9fe_50%,#dbeafe_100%)]' : 'bg-[#fafafa]'
-      }`}
+      className={`relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24 pb-20 bg-transparent`}
     >
       <style>{`
         @keyframes float-1 {
@@ -164,13 +163,13 @@ export default function Hero3D() {
 
       {/* Floating stat pills */}
       <div className="absolute inset-0 pointer-events-none z-0 hidden lg:block max-w-7xl mx-auto">
-        <div className="absolute top-[25%] left-[10%] px-4 py-2 bg-white/80 backdrop-blur-md rounded-full shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] border border-white text-slate-700 font-semibold text-sm animate-float-1">
+        <div className="absolute top-[25%] left-[10%] px-4 py-2 ios-liquid-glass rounded-full text-cyan-100 font-semibold text-sm animate-float-1">
           ⚡ Load Time &lt; 1s
         </div>
-        <div className="absolute top-[35%] right-[15%] px-4 py-2 bg-white/80 backdrop-blur-md rounded-full shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] border border-white text-slate-700 font-semibold text-sm animate-float-2">
+        <div className="absolute top-[35%] right-[15%] px-4 py-2 ios-liquid-glass rounded-full text-cyan-100 font-semibold text-sm animate-float-2">
           📈 +40% Conversion
         </div>
-        <div className="absolute bottom-[25%] left-[20%] px-4 py-2 bg-white/80 backdrop-blur-md rounded-full shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] border border-white text-slate-700 font-semibold text-sm animate-float-3">
+        <div className="absolute bottom-[25%] left-[20%] px-4 py-2 ios-liquid-glass rounded-full text-cyan-100 font-semibold text-sm animate-float-3">
           📱 Mobile First
         </div>
       </div>
@@ -178,48 +177,34 @@ export default function Hero3D() {
       <div className="container mx-auto px-4 max-w-4xl relative z-10 flex flex-col items-center text-center">
         
         {/* Animated Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm shadow-sm mb-8 border border-white/60">
-          <span className="text-slate-800 text-sm font-semibold tracking-wide flex items-center gap-2">
-            ⭐ {t('badge') || 'Trusted by 20+ Businesses'}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full ios-liquid-glass mb-8">
+          <span className="text-cyan-100 text-sm font-medium tracking-wide flex items-center gap-2">
+            ⭐ {t('badge')}
           </span>
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-6 drop-shadow-sm font-syne">
-          {t('headline').split('—').map((part, index, array) => {
-            const hasDash = array.length > 1;
-            if (hasDash && index === 1) {
-              return (
-                <span key={index} className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mt-2 pb-2">
-                  — {part.trim()}
-                </span>
-              );
-            }
-            return (
-              <span key={index} className="pb-2 block">
-                {part.trim()}
-              </span>
-            );
-          })}
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 drop-shadow-md font-syne">
+          {t('headline')}
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl text-slate-600 mt-4 mb-10 max-w-2xl mx-auto font-medium">
+        <p className="text-xl text-cyan-50 mt-4 mb-10 max-w-2xl mx-auto font-medium text-opacity-80">
           {t('sub_headline')}
         </p>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 mx-auto justify-center">
-          <Link href="/start" className="px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-bold transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-1 active:translate-y-0">
-            {t('btn_primary')} {"->"}
+          <Link href="/start" className="px-8 py-4 ios-btn rounded-xl font-bold text-white flex items-center gap-2 glow-primary">
+            {t('btn_primary')}
           </Link>
-          <Link href="/#pricing" className="px-8 py-4 bg-white/60 backdrop-blur-sm border border-slate-200 hover:border-slate-300 hover:bg-white text-slate-700 rounded-lg font-semibold transition-all hover:-translate-y-1 active:translate-y-0 shadow-sm">
+          <Link href="/#pricing" className="px-8 py-4 ios-btn rounded-xl font-semibold text-cyan-100 flex items-center gap-2">
             {t('btn_secondary')}
           </Link>
         </div>
 
         {/* Social Proof Line */}
-        <p className="mt-8 text-sm text-slate-500 font-medium text-center">
+        <p className="mt-8 text-sm text-cyan-200/60 font-medium text-center">
           {t('social_proof')}
         </p>
       </div>

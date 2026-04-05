@@ -78,8 +78,8 @@ export default function Pricing() {
               key={pkg.id} 
               className={`rounded-2xl relative p-6 flex flex-col h-full ${
                 pkg.isPopular 
-                ? 'glassmorphism-glow glow-border scale-100 lg:scale-105 z-10' 
-                : 'glassmorphism border border-cyan-900/50'
+                ? 'ios-liquid-glass-glow scale-100 lg:scale-105 z-10' 
+                : 'ios-liquid-glass'
               }`}
             >
               {pkg.isPopular && (
@@ -111,10 +111,10 @@ export default function Pricing() {
 
               <Link 
                 href={`/start?package=${pkg.id}`}
-                className={`w-full py-3 rounded-lg font-bold text-center text-sm transition-all ${
+                className={`w-full py-3 rounded-lg font-bold text-center text-sm transition-all flex items-center justify-center gap-2 ${
                   pkg.isPopular 
-                  ? 'bg-cyan-500 hover:bg-cyan-400 text-white glow-primary' 
-                  : 'bg-transparent border border-cyan-600 hover:bg-cyan-900/50 text-cyan-100'
+                  ? 'ios-btn text-white glow-primary' 
+                  : 'ios-btn text-cyan-100'
                 }`}
               >
                 {t('btn_get_package')}
@@ -123,7 +123,7 @@ export default function Pricing() {
           ))}
 
           {/* New QR Menu Standalone Card */}
-          <div className="rounded-2xl relative p-6 flex flex-col h-full glassmorphism border border-purple-500/30 bg-purple-500/5">
+          <div className="rounded-2xl relative p-6 flex flex-col h-full ios-liquid-glass border border-purple-500/30 bg-purple-500/5">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-[10px] font-bold uppercase tracking-wider py-1 px-3 rounded-full shadow-lg shadow-purple-500/20">
               NEW SERVICE
             </div>
@@ -151,7 +151,7 @@ export default function Pricing() {
 
             <Link 
               href="/start?package=qrmenu"
-              className="w-full py-3 rounded-lg font-bold text-center text-sm transition-all border border-purple-500/50 hover:bg-purple-500/20 text-purple-100"
+              className="w-full py-3 ios-btn rounded-lg font-bold flex items-center justify-center text-sm transition-all border border-purple-500/50 text-purple-100"
             >
               {t('btn_get_package')}
             </Link>
@@ -159,7 +159,7 @@ export default function Pricing() {
         </div>
 
         {/* Add-on Banner */}
-        <div className="mt-12 max-w-4xl mx-auto glassmorphism border border-cyan-500/20 p-6 rounded-2xl flex flex-col md:flex-row items-center gap-6 relative overflow-hidden group">
+        <div className="mt-12 max-w-4xl mx-auto ios-liquid-glass border border-cyan-500/20 p-6 rounded-2xl flex flex-col md:flex-row items-center gap-6 relative overflow-hidden group">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
           <div className="w-16 h-16 rounded-full bg-cyan-500/10 flex items-center justify-center flex-shrink-0 border border-cyan-500/30 group-hover:scale-110 transition-transform">
             <span className="text-2xl">🍽️</span>
@@ -168,7 +168,7 @@ export default function Pricing() {
             <h4 className="text-lg font-bold text-white mb-1 font-syne">{t('qr_addon.title')}</h4>
             <p className="text-cyan-100/60 text-sm">{t('qr_addon.desc')}</p>
           </div>
-          <Link href="/start" className="px-6 py-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-full text-sm font-bold transition-all">
+          <Link href="/start" className="px-6 py-2 ios-btn text-white rounded-full text-sm font-bold transition-all">
             {t('custom_prompt')}
           </Link>
         </div>

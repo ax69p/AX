@@ -21,7 +21,7 @@ export default function StartPage() {
       <main className="min-h-screen bg-[#070b12] flex items-center justify-center p-4 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-900/20 rounded-full blur-[100px] border border-cyan-500/20" />
         
-        <div className="relative z-10 text-center max-w-lg p-10 glassmorphism rounded-2xl border border-cyan-500/50">
+        <div className="relative z-10 text-center max-w-lg p-10 ios-liquid-glass rounded-2xl">
           <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6 glow-primary">
             <CheckCircle2 size={40} className="text-green-400" />
           </div>
@@ -30,7 +30,7 @@ export default function StartPage() {
             {t('success_sub')}
           </p>
           <div className="flex flex-col gap-4">
-            <Link href="/" className="px-6 py-3 bg-cyan-900/50 border border-cyan-800 hover:bg-cyan-900 text-white rounded-lg transition-all font-semibold">
+            <Link href="/" className="px-6 py-3 ios-btn text-white rounded-lg transition-all font-semibold">
               {t('return_home')}
             </Link>
             <a
@@ -61,7 +61,7 @@ export default function StartPage() {
           <p className="text-cyan-100/70 text-lg">{t('sub_heading')}</p>
         </div>
 
-        <form action={formAction} className="glassmorphism p-8 rounded-2xl border border-cyan-800/40">
+        <form action={formAction} className="ios-liquid-glass p-8 rounded-2xl">
           <input type="hidden" name="locale" value={locale} />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -111,7 +111,7 @@ export default function StartPage() {
           <button 
             type="submit" 
             disabled={isPending}
-            className="w-full py-4 bg-cyan-500 hover:bg-cyan-400 text-white rounded-xl text-lg font-bold transition-all glow-primary hover:scale-[1.02] active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2"
+            className="ios-btn text-white w-full py-4 rounded-xl text-lg font-bold transition-all glow-primary hover:scale-[1.02] active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2"
           >
             {isPending ? (
               <span className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></span>

@@ -15,7 +15,7 @@ export default function FinalCTA() {
 
       <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
         
-        <div className="inline-block px-4 py-2 rounded-full glassmorphism mb-6 border border-cyan-500/30">
+        <div className="inline-block px-4 py-2 rounded-full ios-liquid-glass mb-6">
           <span className="text-cyan-300 text-sm font-bold tracking-widest uppercase">{t('badge')}</span>
         </div>
 
@@ -33,7 +33,7 @@ export default function FinalCTA() {
             href="https://wa.me/96181945750" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="px-10 py-5 bg-cyan-500 hover:bg-cyan-400 text-white rounded-xl text-xl font-bold transition-all glow-primary hover:scale-105 active:scale-95 flex items-center justify-center gap-2 shadow-[0_0_40px_rgba(3,101,239,0.4)]"
+            className="px-10 py-5 ios-btn rounded-xl text-xl font-bold text-white transition-all glow-primary hover:scale-105 active:scale-95 flex items-center justify-center gap-2 shadow-[0_0_40px_rgba(3,101,239,0.4)]"
           >
             <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>

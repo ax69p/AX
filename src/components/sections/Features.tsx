@@ -32,7 +32,7 @@ export default function Features() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((feature, idx) => (
-            <div key={idx} className="p-8 rounded-2xl glassmorphism border border-cyan-900/50 hover:border-cyan-500/30 transition-all duration-300 group hover:-translate-y-1">
+            <div key={idx} className="p-8 rounded-2xl ios-liquid-glass border border-cyan-900/50 hover:border-cyan-500/30 transition-all duration-300 group hover:-translate-y-1">
               <div className="w-14 h-14 rounded-xl bg-cyan-950/50 border border-cyan-800/40 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-cyan-900/80 transition-all">
                 {icons[idx]}
               </div>

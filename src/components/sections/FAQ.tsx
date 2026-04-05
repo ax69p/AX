@@ -28,10 +28,10 @@ export default function FAQ() {
             return (
               <div 
                 key={idx} 
-                className={`border rounded-xl transition-all duration-300 overflow-hidden ${
+                className={`rounded-xl transition-all duration-300 overflow-hidden ${
                   isOpen 
-                  ? 'border-cyan-500/50 bg-cyan-950/30 shadow-[0_0_20px_rgba(3,101,239,0.1)]' 
-                  : 'border-cyan-900/40 bg-transparent hover:border-cyan-800'
+                  ? 'ios-liquid-glass-glow shadow-[0_0_20px_rgba(3,101,239,0.15)]' 
+                  : 'ios-liquid-glass hover:bg-white/10'
                 }`}
               >
                 <button 

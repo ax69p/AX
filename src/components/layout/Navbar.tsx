@@ -35,7 +35,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glassmorphism py-4 shadow-[0_4px_30px_rgba(0,0,0,0.5)]' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'ios-liquid-glass py-4 shadow-[0_4px_30px_rgba(0,0,0,0.5)]' : 'bg-transparent py-6'}`}>
       <div className="container overflow-hidden mx-auto max-w-7xl px-4 flex justify-between items-center">
         
         {/* Logo */}
@@ -60,7 +60,7 @@ export default function Navbar() {
             {t('lang_toggle')}
           </button>
           
-          <Link href="/start" className="px-5 py-2 bg-cyan-600 hover:bg-cyan-500 rounded-lg text-white font-semibold glow-primary transition-all">
+          <Link href="/start" className="px-5 py-2 ios-btn rounded-lg text-white font-semibold glow-primary transition-all">
             {t('get_started')}
           </Link>
         </div>
@@ -73,14 +73,14 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full glassmorphism border-t border-cyan-800/50 flex flex-col items-center py-6 gap-6">
+        <div className="md:hidden absolute top-full left-0 w-full ios-liquid-glass border-t border-cyan-800/50 flex flex-col items-center py-6 gap-6">
           <Link href="/#services" onClick={() => setMobileMenuOpen(false)}>{t('services')}</Link>
           <Link href="/#portfolio" onClick={() => setMobileMenuOpen(false)}>{t('portfolio')}</Link>
           <Link href="/#pricing" onClick={() => setMobileMenuOpen(false)}>{t('pricing')}</Link>
           <button onClick={() => { toggleLanguage(); setMobileMenuOpen(false); }} className="flex items-center gap-2 text-cyan-400">
             <Globe size={18} /> {t('lang_toggle')}
           </button>
-          <Link href="/start" onClick={() => setMobileMenuOpen(false)} className="px-6 py-2 bg-cyan-600 rounded-lg text-white font-semibold">
+          <Link href="/start" onClick={() => setMobileMenuOpen(false)} className="px-6 py-2 ios-btn rounded-lg text-white font-semibold">
             {t('get_started')}
           </Link>
         </div>

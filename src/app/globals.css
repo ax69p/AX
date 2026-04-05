@@ -46,18 +46,36 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: inset 0 0 10px rgba(26, 190, 250, 0.1), 0 0 10px rgba(26, 190, 250, 0.2);
   }
   
-  .glassmorphism {
-    background: rgba(6, 29, 56, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+  .ios-liquid-glass {
+    background: rgba(255, 255, 255, 0.05); /* Slight white tint for contrast on dark */
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05), 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   }
   
-  .glassmorphism-glow {
-    background: rgba(6, 29, 56, 0.6);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(26, 190, 250, 0.3);
-    box-shadow: 0 0 20px rgba(13, 141, 244, 0.1);
+  .ios-liquid-glass-glow {
+    background: rgba(255, 255, 255, 0.08); /* Slightly more prominent */
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 0 20px rgba(13, 141, 244, 0.1), 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .ios-btn {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .ios-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
   }
   
   .text-glow {

@@ -56,7 +56,7 @@ export default function LeadMagnet() {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
       <div 
-        className="relative w-full max-w-lg bg-[#070b12] border border-cyan-500/30 rounded-2xl shadow-[0_0_50px_rgba(3,101,239,0.15)] overflow-hidden animate-in fade-in zoom-in duration-300"
+        className="relative w-full max-w-lg ios-liquid-glass rounded-2xl overflow-hidden animate-in fade-in zoom-in duration-300"
       >
         <button 
           onClick={handleClose}
@@ -109,7 +109,7 @@ export default function LeadMagnet() {
                 
                 <button 
                   type="submit" 
-                  className="w-full py-4 bg-cyan-500 hover:bg-cyan-400 text-white rounded-xl text-md font-bold transition-all glow-primary hover:scale-[1.02] active:scale-95"
+                  className="ios-btn text-white w-full py-4 rounded-xl text-md font-bold transition-all glow-primary hover:scale-[1.02] active:scale-95"
                 >
                   {t('btn_submit')}
                 </button>
