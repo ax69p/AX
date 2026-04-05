@@ -1,36 +1,8 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
-import { motion, useInView } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
 
-// Counter component for animated numbers
-function Counter({ from = 0, to, duration = 2, suffix = "" }: { from?: number, to: number, duration?: number, suffix?: string }) {
-  const nodeRef = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(nodeRef, { once: true, margin: "-100px" });
-  const [count, setCount] = useState(from);
-
-  useEffect(() => {
-    if (!isInView) return;
-    
-    let startTime: number;
-    const animate = (time: number) => {
-      if (!startTime) startTime = time;
-      const progress = (time - startTime) / (duration * 1000);
-      
-      if (progress < 1) {
-        setCount(Math.floor(from + (to - from) * progress));
-        requestAnimationFrame(animate);
-      } else {
-        setCount(to);
-      }
-    };
-    
-    requestAnimationFrame(animate);
-  }, [isInView, from, to, duration]);
-
-  return <span ref={nodeRef}>{count}{suffix}</span>;
-}
+import { Counter } from '@/components/ui/Counter';
 
 export default function SocialProof() {
   const t = useTranslations('SocialProof');
@@ -54,13 +26,13 @@ export default function SocialProof() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10 border-b border-cyan-900/40 pb-16">
           <div className="flex flex-col items-center text-center">
             <h3 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-blue-600 mb-2 font-syne drop-shadow-md">
-              <Counter to={50} suffix="+" />
+              <Counter to={20} suffix="+" />
             </h3>
             <p className="text-cyan-100/70 font-medium tracking-wide">{t('stat_websites')}</p>
           </div>
           <div className="flex flex-col items-center text-center">
             <h3 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-blue-600 mb-2 font-syne drop-shadow-md">
-              <Counter to={20} suffix="+" />
+              <Counter to={5} suffix="+" />
             </h3>
             <p className="text-cyan-100/70 font-medium tracking-wide">{t('stat_clients')}</p>
           </div>
@@ -93,7 +65,7 @@ export default function SocialProof() {
             {[...reviews, ...reviews].map((review, idx) => (
               <div key={idx} className="flex items-center gap-4">
                 <span className="text-yellow-400 text-lg">★★★★★</span>
-                <span className="text-md font-medium text-cyan-50 italic">"{review}"</span>
+                <span className="text-md font-medium text-cyan-50 italic">&quot;{review}&quot;</span>
               </div>
             ))}
           </div>

@@ -12,7 +12,9 @@ export default function UrgencyTimer({ initialSeconds = 8073, textPrefix = "Spec
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setTimeout(() => {
+      setMounted(true);
+    }, 0);
     
     // Check if we have a saved end time in localStorage
     const savedEndTime = localStorage.getItem('axentrix_launch_end');
