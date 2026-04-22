@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "AxentriX | Premium Web Design & Conversion Optimization Agency",
-    "description": "AxentriX builds high-converting, lightning-fast websites using Nextjs We turn your digital presence into a client-generating machine Premium designs tailored for growth",
-    "keywords": "web design agency, nextjs development, conversion rate optimization, premium websites, digital growth partner"
+    "title": "AxentriX | Premium Web Design Lebanon — From $199",
+    "description": "High-converting websites for Lebanese businesses. 2–7 days. From $199. 100% money-back.",
+    "keywords": "web design agency, nextjs development, conversion rate optimization, premium websites, digital growth partner, web design Lebanon, website Lebanon"
   },
   "Hero": {
     "badge": "Premium Web Agency  Results Guaranteed",
@@ -10,7 +10,9 @@
     "sub_headline": "High-converting websites for businesses that want real growth",
     "btn_primary": "Get Started",
     "btn_secondary": "View Packages",
-    "social_proof": "⭐⭐⭐⭐⭐ Trusted by 20+ businesses across 5 industries",
+    "social_proof_websites": "Websites Built",
+    "social_proof_clients": "Happy Clients",
+    "social_proof_satisfaction": "Satisfaction",
     "timer_text": "Special launch pricing ends in:"
   },
   "SocialProof": {

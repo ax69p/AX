@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
-import Navbar from "@/components/layout/Navbar";
+import GlassNavbar from "@/components/ui/glass-navbar";
 import Footer from "@/components/layout/Footer";
 import "../globals.css";
 
@@ -91,10 +91,10 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={isRtl ? 'rtl' : 'ltr'} className="scroll-smooth">
       <body
-        className={`${syne.variable} ${dmSans.variable} font-dm-sans bg-background text-foreground antialiased selection:bg-cyan-500/30 selection:text-cyan-100`}
+        className={`${syne.variable} ${dmSans.variable} font-dm-sans bg-background text-foreground antialiased selection:bg-cyan-500/30 selection:text-cyan-100 overflow-x-hidden`}
       >
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <Navbar />
+          <GlassNavbar />
           {children}
           <Footer />
         </NextIntlClientProvider>

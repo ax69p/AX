@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@paper-design/shaders-react": "^0.0.76",
     "@supabase/supabase-js": "^2.101.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
