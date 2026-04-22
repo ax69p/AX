@@ -112,36 +112,7 @@ export default function Hero3D() {
           </div>
         </FadeUp>
 
-        {/* Stats Row */}
-        <FadeUp delay={0.4}>
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            <div className="flex flex-col items-center">
-              <span className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#00D4FF] to-blue-400 font-syne">
-                <AnimatedCounter target={50} suffix="+" duration={2000} />
-              </span>
-              <span className="text-white/50 text-sm mt-1">
-                {t("social_proof_websites") ?? "Websites Built"}
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#00D4FF] to-blue-400 font-syne">
-                <AnimatedCounter target={20} suffix="+" duration={2000} />
-              </span>
-              <span className="text-white/50 text-sm mt-1">
-                {t("social_proof_clients") ?? "Happy Clients"}
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#00D4FF] to-blue-400 font-syne">
-                <AnimatedCounter target={100} suffix="%" duration={2000} />
-              </span>
-              <span className="text-white/50 text-sm mt-1">
-                {t("social_proof_satisfaction") ?? "Satisfaction"}
-              </span>
-            </div>
-          </div>
-        </FadeUp>
-
+        {/* Stats Row Removed to avoid duplication with SocialProof section */}
       </div>
     </section>
   );
