@@ -11,11 +11,13 @@ import "../globals.css";
 const syne = Syne({
   variable: "--font-syne",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

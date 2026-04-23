@@ -3,8 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import dynamic from 'next/dynamic';
-const ShaderBackground = dynamic(() => import("@/components/ui/shader-background"), { ssr: false });
+import ShaderBackground from "@/components/ui/shader-background";
 import IOSButton from "@/components/ui/ios-button";
 import AnimatedCounter from "@/components/ui/animated-counter";
 import FadeUp from "@/components/ui/fade-up";
@@ -75,30 +74,30 @@ export default function Hero3D() {
 
       <div className="container mx-auto px-4 max-w-4xl relative z-10 flex flex-col items-center text-center">
         {/* Animated Badge */}
-        <FadeUp>
+        <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0s" }}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full ios-liquid-glass mb-8">
             <span className="text-cyan-100 text-sm font-medium tracking-wide flex items-center gap-2">
               {t("badge")}
             </span>
           </div>
-        </FadeUp>
+        </div>
 
         {/* Headline */}
-        <FadeUp delay={0.1}>
+        <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 drop-shadow-md font-syne">
             {t("headline")}
           </h1>
-        </FadeUp>
+        </div>
 
         {/* Subheadline */}
-        <FadeUp delay={0.2}>
+        <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
           <p className="text-lg md:text-xl text-cyan-50 mt-4 mb-10 max-w-2xl mx-auto font-medium text-opacity-80">
             {t("sub_headline")}
           </p>
-        </FadeUp>
+        </div>
 
         {/* CTA Buttons */}
-        <FadeUp delay={0.3}>
+        <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <div className="flex flex-col sm:flex-row items-center gap-4 mx-auto justify-center w-full max-w-xs sm:max-w-none">
             <Link href="/start" className="w-full sm:w-auto">
               <IOSButton variant="primary" className="w-full">
@@ -111,7 +110,7 @@ export default function Hero3D() {
               </IOSButton>
             </Link>
           </div>
-        </FadeUp>
+        </div>
 
         {/* Stats Row Removed to avoid duplication with SocialProof section */}
       </div>
