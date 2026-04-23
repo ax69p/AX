@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import ShaderBackground from "@/components/ui/shader-background";
+import dynamic from 'next/dynamic';
+const ShaderBackground = dynamic(() => import("@/components/ui/shader-background"), { ssr: false });
 import IOSButton from "@/components/ui/ios-button";
 import AnimatedCounter from "@/components/ui/animated-counter";
 import FadeUp from "@/components/ui/fade-up";

@@ -1,11 +1,13 @@
+import dynamic from 'next/dynamic';
 import Hero3D from '@/components/sections/Hero3D';
-import SocialProof from '@/components/sections/SocialProof';
-import ROICalculator from '@/components/sections/ROICalculator';
-import Portfolio from '@/components/sections/Portfolio';
-import Features from '@/components/sections/Features';
-import Pricing from '@/components/sections/Pricing';
-import FAQ from '@/components/sections/FAQ';
-import FinalCTA from '@/components/sections/FinalCTA';
+
+const SocialProof = dynamic(() => import('@/components/sections/SocialProof'));
+const ROICalculator = dynamic(() => import('@/components/sections/ROICalculator'));
+const Portfolio = dynamic(() => import('@/components/sections/Portfolio'));
+const Features = dynamic(() => import('@/components/sections/Features'));
+const Pricing = dynamic(() => import('@/components/sections/Pricing'));
+const FAQ = dynamic(() => import('@/components/sections/FAQ'));
+const FinalCTA = dynamic(() => import('@/components/sections/FinalCTA'));
 
 export default function Home() {
   return (
